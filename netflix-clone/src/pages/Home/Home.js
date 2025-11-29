@@ -1,19 +1,17 @@
+// src/pages/Home/Home.js
 import React from "react";
-import "./Home.css";
-import Banner from "../../Components/Banner/Banner";
 import Row from "../../Components/Row/Row";
+import { requests } from "../../api/tmdb";
 
 function Home() {
   return (
-    <div className="home">
-      <Banner />
-
-      {/* Example rows */}
-      <Row title="Trending Now" fetchUrl="trending" />
-      <Row title="Top Rated" fetchUrl="top_rated" />
-      <Row title="Action Movies" fetchUrl="action" />
-      <Row title="Comedy Movies" fetchUrl="comedy" />
-      <Row title="Horror Movies" fetchUrl="horror" />
+    <div>
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+      <Row title="Upcoming Movies" fetchUrl={requests.fetchUpcoming} />
+      <Row title="Popular Movies" fetchUrl={requests.fetchPopular} />
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
     </div>
   );
 }

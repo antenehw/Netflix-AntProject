@@ -1,11 +1,19 @@
-import React from 'react'
+// src/Components/Footer/Footer.js
+import React from "react";
+import "./Footer.css"; // optional if you want custom styling
 
-const Footer = () => {
+function Footer() {
   return (
-    <div>
-      
-    </div>
-  )
+    <footer className="footer">
+      <div className="footer-content">
+        <p>© 2025 Your Company Name. All rights reserved.</p>
+        <p>
+          Designed with ❤️ by <a href="https://yourwebsite.com">You</a>
+        </p>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
+

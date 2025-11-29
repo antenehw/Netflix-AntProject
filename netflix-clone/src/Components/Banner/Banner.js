@@ -1,28 +1,37 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { requests } from "../Tmdb/tmdb";
+import { requests } from "../../api/tmdb";
 import "./Banner.css";
 
 function Banner() {
   const [movie, setMovie] = useState(null);
 
-  useEffect(() => {
-    async function fetchData() {
+useEffect(() => {
+  async function fetchData() {
+    try {
       const baseURL = "https://api.themoviedb.org/3";
-
       const request = await axios.get(baseURL + requests.fetchNetflixOriginals);
 
-      // pick a random movie
-      const randomMovie =
-        request.data.results[
-          Math.floor(Math.random() * request.data.results.length)
-        ];
+      const results = request?.data?.results;
 
-      setMovie(randomMovie);
+      if (Array.isArray(results) && results.length > 0) {
+        const randomMovie =
+          results[Math.floor(Math.random() * results.length)];
+
+        setMovie(randomMovie);
+      } else {
+        console.warn("Banner: No results returned from TMDB", request.data);
+        setMovie(null);
+      }
+    } catch (err) {
+      console.error("Banner fetch failed:", err);
+      setMovie(null);
     }
+  }
 
-    fetchData();
-  }, []);
+  fetchData();
+}, []);
+
 
   return (
     <header
