@@ -1,7 +1,9 @@
 // src/pages/Home/Home.js
 import React from "react";
 import Row from "../../Components/Row/Row";
-import { requests } from "../../api/tmdb";
+import { requests } from "../../utilis/requests";
+import axios from "axios";
+
 
 function Home() {
   return (

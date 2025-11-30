@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { requests } from "../../api/tmdb";
+import axios from "../../utilis/axios"
 import "./Row.css";
 
 function Row({ title, fetchUrl }) {
@@ -9,6 +9,19 @@ function Row({ title, fetchUrl }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
+
+
+// console.log(fetchUrl);
+//         let request = await axios.get(fetchUrl);
+//         console.log(request);
+//         setMovie(request.data.results);
+//       }catch(error) {
+//         console.log(error);
+//       }
+//     })()
+//   }, [fetchUrl]);
+
+
         const baseURL = "https://api.themoviedb.org/3";
         const res = await fetch(baseURL + fetchUrl);
         const data = await res.json();

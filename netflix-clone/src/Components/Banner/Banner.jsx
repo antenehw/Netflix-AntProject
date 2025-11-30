@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { requests } from "../../api/tmdb";
+import { requests } from "../../utilis/requests";
 import "./Banner.css";
 
 function Banner() {
