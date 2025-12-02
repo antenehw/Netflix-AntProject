@@ -57,18 +57,17 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       <h2>{title}</h2>
 
       <div className="row_posters">
-        {movies?.map((movie, index) => (
-        <img
-  onClick={() => handleClick(movie)}
-  key={movie.id || index}
-  src={
-    movie.poster_path
+          {movies?.map((movie, index) => (
+          <img
+           onClick={() => handleClick(movie)}
+          key={movie.id || index}
+          src={movie.poster_path
       ? `${base_url}${movie.poster_path}`
       : ""
-  }
-  alt={movie.title || movie.name || movie.original_name}
-  className={`row_poster ${isLargeRow ? "row_posterLarge" : ""}`}
-/>
+       }
+       alt={movie.title || movie.name || movie.original_name}
+      className={`row_poster ${isLargeRow ? "row_posterLarge" : ""}`}
+    />
 
         ))}
       </div>

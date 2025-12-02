@@ -7,9 +7,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© 2025 Your Company Name. All rights reserved.</p>
+        <p>© Evangadi June 2025 Group 3 Project trial. All rights reserved.</p>
         <p>
-          Designed with ❤️ by <a href="https://yourwebsite.com">You</a>
+          Designed with ❤️ by <a href="https://yourwebsite.com"> rendered by Anteneh W. undersupervision of Bekure</a>
         </p>
       </div>
     </footer>
