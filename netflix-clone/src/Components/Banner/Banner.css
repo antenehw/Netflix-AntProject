@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    height: 40vh;
+    height: 60vh;
     /* Netflix size — prevents huge zoom */
     width: 75%;
     background-size: cover;

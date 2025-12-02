@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "../../utilis/axios";
 import { requests } from "../../utilis/requests";
 import "./Banner.css";
 
@@ -10,7 +10,7 @@ useEffect(() => {
   async function fetchData() {
     try {
       const baseURL = "https://api.themoviedb.org/3";
-      const request = await axios.get(baseURL + requests.fetchNetflixOriginals);
+      const request = await axios.get(requests.fetchNetflixOriginals);
 
       const results = request?.data?.results;
 
@@ -38,7 +38,9 @@ useEffect(() => {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url(https://image.tmdb.org/t/p/original${movie?.backdrop_path})`,
+        backgroundImage: movie?.backdrop_path
+          ? `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`
+          : "none",
         backgroundPosition: "center center",
       }}
     >
@@ -47,9 +49,7 @@ useEffect(() => {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
 
-        <p className="banner_description">
-          {movie?.overview}
-        </p>
+        <p className="banner_description">{movie?.overview}</p>
 
         <div className="banner_buttons">
           <button className="banner_button">Play</button>
