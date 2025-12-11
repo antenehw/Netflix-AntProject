@@ -1,11 +1,13 @@
 .banner {
+
     position: relative;
-    height: 75vh;
-    /* Netflix size — prevents huge zoom */
-    /* width: 90%; */
+    height: 85vh;
+    
+    width: 100%;
+    color: white;
     background-size: cover;
     /* Proper crop */
-    background-position: center; 
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -13,7 +15,7 @@
     position: absolute;
     bottom: 20%;
     left: 30px;
-    max-width: 75%;
+    max-width: 500px;
     color: white;
 }
 

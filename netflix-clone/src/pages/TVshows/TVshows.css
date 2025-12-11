@@ -1,0 +1,30 @@
+.tv-container {
+    padding: 40px;
+    color: white;
+}
+
+.tv-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.tv-card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.tv-card img:hover {
+    transform: scale(1.05);
+}
+
+.tv-card p {
+    margin-top: 10px;
+    text-align: center;
+}

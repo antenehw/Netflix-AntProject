@@ -26,22 +26,12 @@ function Header() {
       </div>
 
       <div className={modularcss["header-right"]}>
-        <input 
-          type="text" 
-          placeholder="Search"
-          className={modularcss.search}
-        />
-
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-          alt="User"
-          className={modularcss["user-avatar"]}
-        />
-
-        <div className={modularcss["header-search"]}>
+                <div className={modularcss["header-search"]}>
 
           <select className={modularcss["header-searchSelect"]}>
             <option>Movies</option>
+            <option>TV Shows</option>
+            <option>Actors</option>
           </select>
 
           <input
@@ -51,6 +41,8 @@ function Header() {
           />
 
           <FaSearch className={modularcss["header-searchIcon"]} />
+
+     
         </div>
       </div>
 
