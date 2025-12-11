@@ -33,3 +33,11 @@
     margin: auto;
     line-height: 1.6;
 }
+
+.Disclaimer {
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.6;  
+    font-size: large; 
+    color: #e70b0b;
+}

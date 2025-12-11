@@ -9,9 +9,14 @@ function Footer() {
       <div className="footer-content">
         <p>© Evangadi June 2025 Group 3 Project trial. All rights reserved.</p>
         <p>
-          Designed with ❤️ by <a href="https://yourwebsite.com"> rendered by Anteneh W. undersupervision of Bekure</a>
+          Designed by <a href="https://yourwebsite.com"> Developed by Anteneh W. under supervision of Group Instructor - Bekure</a>
         </p>
       </div>
+
+       <div className="Disclaimer">
+            <p> Disclaimer : This Netflix logo && Avatar are from the internet and use for Learning and demonstration purposes only </p>
+        </div>
+      
     </footer>
   );
 }

@@ -1,19 +1,22 @@
-
 import React from "react";
 import Header from "../../Components/Header/Header";
 import RowList from "../../Components/Rows/RowList/RowList";
-
+import Banner from "../../Components/Banner/Banner";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
   return (
     <>
-    <Header/>
-        <RowList/>
-    {/* <Banner/>
-    <Footer/> */}
-    </>
+      <Header />
 
+      <Banner />
+
+      <RowList />
+
+      <Footer />
+    </>
   );
 }
 
 export default Home;
+
