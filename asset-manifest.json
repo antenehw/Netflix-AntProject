@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Netflix-AntProject/static/css/main.5f2368ea.css",
+    "main.js": "/Netflix-AntProject/static/js/main.97ffae45.js",
+    "index.html": "/Netflix-AntProject/index.html",
+    "main.5f2368ea.css.map": "/Netflix-AntProject/static/css/main.5f2368ea.css.map",
+    "main.97ffae45.js.map": "/Netflix-AntProject/static/js/main.97ffae45.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f2368ea.css",
+    "static/js/main.97ffae45.js"
+  ]
+}
