@@ -29,8 +29,10 @@ function Header() {
                 <div className={modularcss["header-search"]}>
 
           <select className={modularcss["header-searchSelect"]}>
-            <option>Movies</option>
+            <option>Homes</option>
             <option>TV Shows</option>
+            <option>Movies</option>
+            <option>New & Popular</option>
             <option>Actors</option>
           </select>
 
@@ -42,7 +44,6 @@ function Header() {
 
           <FaSearch className={modularcss["header-searchIcon"]} />
 
-     
         </div>
       </div>
 

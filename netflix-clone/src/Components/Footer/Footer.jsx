@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-content">
         <p>© Evangadi June 2025 Group 3 Project trial. All rights reserved.</p>
         <p>
-          Designed by <a href="https://yourwebsite.com"> Developed by Anteneh W. under supervision of Group Instructor - Bekure</a>
+          Designed by <a href="https://yourwebsite.com"> & Developed by Anteneh W. under supervision of Group-3 Instructor - Bekure</a>
         </p>
       </div>
 
